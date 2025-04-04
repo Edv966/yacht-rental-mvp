@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dubai Yacht Rental</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #0a0a0a;
+      color: white;
+    }
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('https://images.unsplash.com/photo-1604430359094-94d4d9110e50?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      color: white;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 10px 0 20px;
+    }
+    .btn-primary {
+      background-color: #f0c26d;
+      color: black;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 40px;
+    }
+    .yachts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .yacht-card {
+      background: #1c1c1c;
+      border-radius: 12px;
+      overflow: hidden;
+      width: 320px;
+      color: white;
+      box-shadow: 0 0 10px rgba(255,255,255,0.05);
+    }
+    .yacht-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+    .yacht-card .info {
+      padding: 20px;
+    }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .step {
+      background: #1c1c1c;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(255,255,255,0.05);
+    }
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    a {
+      color: #f0c26d;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Аренда Яхт в Дубае</h1>
+    <p>Закат. Шик. Свобода. Ваше плавание начинается здесь.</p>
+    <a href="#contact" class="btn-primary">Забронировать</a>
+  </header>
+
+  <section>
+    <h2>Популярные Яхты</h2>
+    <div class="yachts">
+      <div class="yacht-card">
+        <img src="https://images.unsplash.com/photo-1604667089220-0f6f1f1f37b3?auto=format&fit=crop&w=800&q=80" alt="White Pearl Yacht">
+        <div class="info">
+          <h3>White Pearl 45ft</h3>
+          <p>до 12 гостей | от 850 AED | закатный маршрут</p>
+        </div>
+      </div>
+      <div class="yacht-card">
+        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=800&q=80" alt="Ocean Star Yacht">
+        <div class="info">
+          <h3>Ocean Star 55ft</h3>
+          <p>до 18 гостей | DJ, напитки | пати-тур</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Как это работает</h2>
+    <div class="steps">
+      <div class="step">
+        <h3>1. Выбор</h3>
+        <p>Выберите яхту или готовый маршрут</p>
+      </div>
+      <div class="step">
+        <h3>2. Связь</h3>
+        <p>Telegram / WhatsApp — мы оформим всё быстро</p>
+      </div>
+      <div class="step">
+        <h3>3. Отдых</h3>
+        <p>Встречаемся в марине и отправляемся навстречу закату</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Контакты</h2>
+    <p style="text-align:center">Telegram: <a href="https://t.me/example" target="_blank">@example</a> | WhatsApp: <a href="https://wa.me/971000000000" target="_blank">+971 00 000 0000</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Dubai Yacht Rentals — Все права защищены.</p>
+  </footer>
+</body>
+</html>
